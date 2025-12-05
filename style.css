@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Schoolbell&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Schoolbell&display=swap");
 
 .schoolbell-regular {
   font-family: "Schoolbell", cursive;
@@ -19,6 +19,9 @@
   --peach: #c97d60;
   --blush: #ffbcb5;
   --almond: #f2e5d7;
+
+  --product-card-w: 100px;
+  --product-card-h: 100px;
 }
 
 .bg-grey {
@@ -41,11 +44,45 @@
   color: var(--shadow-gray);
 }
 
-body {
-  background-color: var(--peach);
-  font-family: "Nunito Sans", sans-serif;
-}
+/* Small fixes */
 
 .navbar {
-  height: 80px !important;
+  height: 90px !important;
+}
+
+/* "Logo-link" */
+.navbar-brand.text-color:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.nav-link.text-color:hover {
+  color: #63372c !important;
+  text-decoration: none;
+}
+
+/* Card & sizes */
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.product-img-size {
+  height: 180px;
+  object-fit: fill;
+}
+
+.kaffeparty-img-size {
+  height: 366px;
+}
+
+.card-transition {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-transition:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
